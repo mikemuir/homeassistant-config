@@ -1,0 +1,273 @@
+- id: '1609972874362'
+  name: Leaving
+  entities:
+    switch.backyard_lights_outlet:
+      current_power_w: 0
+      friendly_name: Backyard Lights Outlet
+      state: 'off'
+    light.hallway_main_lights:
+      device_id: '6'
+      zone_id: '3'
+      friendly_name: Hallway_Main Lights
+      supported_features: 33
+      state: 'off'
+    light.living_room_lights:
+      device_id: '2'
+      zone_id: '1'
+      friendly_name: Living Room_Lights
+      supported_features: 33
+      state: 'off'
+    light.master_bedroom_bedroom_light:
+      device_id: '4'
+      zone_id: '2'
+      friendly_name: Master Bedroom_Bedroom Light
+      supported_features: 33
+      state: 'off'
+    switch.outlet:
+      current_power_w: 0
+      friendly_name: Outlet
+      state: 'off'
+    media_player.office:
+      source_list:
+      - 24K Magic
+      - 'AirPlay Device: Living Room'
+      - Aloe Blacc Radio
+      - Before These Crowded Streets
+      - Before These Crowded Streets
+      - 'Binaural Beats: Sleep'
+      - 'Binaural Beats: Soothing Sounds for Deep Sleep and Relaxation'
+      - Bohemian Rhapsody (The Original Soundtrack)
+      - Bonobo Radio
+      - Boogie On Reggae Woman (Live)
+      - Change of Pace
+      - Ferdinand (Original Motion Picture Soundtrack) - EP
+      - Frozen (Original Motion Picture Soundtrack)
+      - Frozen 2 (Original Motion Picture Soundtrack / Deluxe Edition)
+      - Handmade Cities
+      - Leap! (Original Motion Picture Soundtrack)
+      - Let It Go Radio
+      - Phillip Phillips
+      - Radio Nursery
+      - Snarky Puppy Radio
+      - The Middle
+      - Thud
+      - Tragic Kingdom
+      volume_level: 0.22
+      is_volume_muted: false
+      media_content_id: http://172.16.17.10:8123/api/tts_proxy/3844b17b367801f41a3ff27aab7d5ca297c2b984_en_-_google_translate.mp3
+      media_content_type: music
+      media_duration: 0
+      media_position: 0
+      media_position_updated_at: '2021-01-06T20:51:57.575922+00:00'
+      media_title: 3844b17b367801f41a3ff27aab7d5ca297c2b984_en_-_google_translate.mp3
+      shuffle: false
+      repeat: 'off'
+      sonos_group:
+      - media_player.office
+      queue_position: 0
+      friendly_name: 'Sonos: Office'
+      supported_features: 457279
+      state: paused
+    media_player.shield:
+      friendly_name: SHIELD TV
+      supported_features: 152461
+      state: 'off'
+    media_player.television:
+      friendly_name: Television
+      supported_features: 152461
+      state: 'off'
+    media_player.sonos_move:
+      source_list:
+      - 24K Magic
+      - 'AirPlay Device: Living Room'
+      - Aloe Blacc Radio
+      - Before These Crowded Streets
+      - Before These Crowded Streets
+      - 'Binaural Beats: Sleep'
+      - 'Binaural Beats: Soothing Sounds for Deep Sleep and Relaxation'
+      - Bohemian Rhapsody (The Original Soundtrack)
+      - Bonobo Radio
+      - Boogie On Reggae Woman (Live)
+      - Change of Pace
+      - Ferdinand (Original Motion Picture Soundtrack) - EP
+      - Frozen (Original Motion Picture Soundtrack)
+      - Frozen 2 (Original Motion Picture Soundtrack / Deluxe Edition)
+      - Handmade Cities
+      - Leap! (Original Motion Picture Soundtrack)
+      - Let It Go Radio
+      - Phillip Phillips
+      - Radio Nursery
+      - Snarky Puppy Radio
+      - The Middle
+      - Thud
+      - Tragic Kingdom
+      volume_level: 0.28
+      is_volume_muted: false
+      media_content_id: x-sonos-spotify:spotify%3atrack%3a1nSWQ5Y7OcuGiWGdA1UYlr?sid=12&flags=8224&sn=14
+      media_content_type: music
+      media_duration: 219
+      media_position: 36
+      media_position_updated_at: '2021-01-06T20:51:57.334408+00:00'
+      media_title: June, After Dark
+      media_artist: Elliot Root
+      media_album_name: Thoughts From Yesterday
+      shuffle: true
+      repeat: 'off'
+      sonos_group:
+      - media_player.sonos_move
+      queue_position: 24
+      friendly_name: 'Sonos: Move'
+      entity_picture: /api/media_player_proxy/media_player.sonos_move?token=85c4aaaef433335303a716410224cc54608349f7cf02eab9b67d388fc108424f&cache=9cd1ca28278d2e12
+      supported_features: 457279
+      state: paused
+    media_player.living_room:
+      source_list:
+      - 24K Magic
+      - 'AirPlay Device: Living Room'
+      - Aloe Blacc Radio
+      - Before These Crowded Streets
+      - Before These Crowded Streets
+      - 'Binaural Beats: Sleep'
+      - 'Binaural Beats: Soothing Sounds for Deep Sleep and Relaxation'
+      - Bohemian Rhapsody (The Original Soundtrack)
+      - Bonobo Radio
+      - Boogie On Reggae Woman (Live)
+      - Change of Pace
+      - Ferdinand (Original Motion Picture Soundtrack) - EP
+      - Frozen (Original Motion Picture Soundtrack)
+      - Frozen 2 (Original Motion Picture Soundtrack / Deluxe Edition)
+      - Handmade Cities
+      - Leap! (Original Motion Picture Soundtrack)
+      - Let It Go Radio
+      - Phillip Phillips
+      - Radio Nursery
+      - Snarky Puppy Radio
+      - The Middle
+      - Thud
+      - Tragic Kingdom
+      volume_level: 0.34
+      is_volume_muted: false
+      media_content_id: x-sonos-spotify:spotify%3atrack%3a3JiqfgX20NPxT070KqaQV7?sid=12&flags=8224&sn=14
+      media_content_type: music
+      media_duration: 0
+      media_position: 0
+      media_position_updated_at: '2021-01-06T22:40:56.130340+00:00'
+      media_title: x-sonos-spotify:spotify:track:3JiqfgX20NPxT070KqaQV7?sid=12&flags=8224&sn=14
+      shuffle: false
+      repeat: 'off'
+      sonos_group:
+      - media_player.living_room
+      night_sound: false
+      speech_enhance: true
+      queue_position: 0
+      friendly_name: 'Sonos: Living Room'
+      supported_features: 457279
+      state: paused
+    media_player.master_bedroom:
+      source_list:
+      - 24K Magic
+      - 'AirPlay Device: Living Room'
+      - Aloe Blacc Radio
+      - Before These Crowded Streets
+      - Before These Crowded Streets
+      - 'Binaural Beats: Sleep'
+      - 'Binaural Beats: Soothing Sounds for Deep Sleep and Relaxation'
+      - Bohemian Rhapsody (The Original Soundtrack)
+      - Bonobo Radio
+      - Boogie On Reggae Woman (Live)
+      - Change of Pace
+      - Ferdinand (Original Motion Picture Soundtrack) - EP
+      - Frozen (Original Motion Picture Soundtrack)
+      - Frozen 2 (Original Motion Picture Soundtrack / Deluxe Edition)
+      - Handmade Cities
+      - Leap! (Original Motion Picture Soundtrack)
+      - Let It Go Radio
+      - Phillip Phillips
+      - Radio Nursery
+      - Snarky Puppy Radio
+      - The Middle
+      - Thud
+      - Tragic Kingdom
+      volume_level: 0.2
+      is_volume_muted: false
+      media_content_id: http://172.16.17.10:8123/api/tts_proxy/ca6a12a0f6390fd0c7761f377c1e64da749d5288_en_-_google_translate.mp3
+      media_content_type: music
+      media_duration: 1
+      media_position: 0
+      media_position_updated_at: '2021-01-06T20:51:57.613411+00:00'
+      media_title: ca6a12a0f6390fd0c7761f377c1e64da749d5288_en_-_google_translate.mp3
+      shuffle: false
+      repeat: 'off'
+      sonos_group:
+      - media_player.master_bedroom
+      queue_position: 0
+      friendly_name: 'Sonos: Master Bedroom'
+      supported_features: 457279
+      state: paused
+  icon: mdi:home-export-outline
+- id: '1609973266087'
+  name: Goodnight
+  entities:
+    switch.backyard_lights_outlet:
+      current_power_w: 0
+      friendly_name: Backyard Lights Outlet
+      state: 'off'
+    light.hallway_main_lights:
+      device_id: '6'
+      zone_id: '3'
+      friendly_name: Hallway_Main Lights
+      supported_features: 33
+      state: 'off'
+    light.living_room_lights:
+      device_id: '2'
+      zone_id: '1'
+      friendly_name: Living Room_Lights
+      supported_features: 33
+      state: 'off'
+    light.master_bedroom_bedroom_light:
+      device_id: '4'
+      zone_id: '2'
+      friendly_name: Master Bedroom_Bedroom Light
+      supported_features: 33
+      state: 'off'
+    remote.harmony_hub:
+      activity_starting:
+      current_activity: PowerOff
+      activity_list:
+      - Nintendo Switch
+      - Shield TV
+      - Play Xbox One
+      devices_list:
+      - Family Room
+      - Vizio TV
+      - Xbox One
+      - NVIDIA Game Console
+      last_activity: Shield TV
+      friendly_name: Harmony Hub
+      supported_features: 0
+      state: 'off'
+    switch.outlet:
+      current_power_w: 0
+      friendly_name: Outlet
+      state: 'off'
+  icon: mdi:power-sleep
+- id: '1609973580639'
+  name: Watch TV
+  entities:
+    remote.harmony_hub:
+      activity_starting:
+      current_activity: Shield TV
+      activity_list:
+      - Nintendo Switch
+      - Shield TV
+      - Play Xbox One
+      devices_list:
+      - Family Room
+      - Vizio TV
+      - Xbox One
+      - NVIDIA Game Console
+      last_activity: Shield TV
+      friendly_name: Harmony Hub
+      supported_features: 0
+      state: 'on'
+  icon: mdi:television

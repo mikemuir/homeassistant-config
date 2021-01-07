@@ -1,0 +1,36 @@
+homeassistant:
+  name: Home
+  latitude: 34.100909
+  longitude: -117.667658
+  elevation: 1430
+  unit_system: imperial
+  time_zone: America/Los_Angeles
+  external_url: "https://homeassistant.muirsandwich.net"
+lutron_caseta:
+  - host: 172.16.17.166
+    keyfile: caseta.key
+    certfile: caseta.crt
+    ca_certs: caseta-bridge.crt
+nest:
+  client_id: !secret nest_client_id
+  client_secret: !secret nest_client_secret
+  # "Project ID" in the Device Access Console
+  project_id: !secret nest_project_id
+  # Provide the full path exactly as shown under "Subscription name" in Google Cloud Console
+  subscriber_id: !secret nest_subscriber_id 
+remote:
+  - platform: harmony
+    name: harmony_hub
+    host: 172.16.17.170
+# Configure a default setup of Home Assistant (frontend, api, etc)
+default_config:
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+switch: !include switch.yaml

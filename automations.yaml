@@ -1,0 +1,33 @@
+- id: '1609691440122'
+  alias: 'Doorbell: Flash lights'
+  description: Flashes the lights when the doorbell rings.
+  trigger:
+  - platform: state
+    entity_id: binary_sensor.front_door_ding
+    from: 'off'
+    to: 'on'
+  condition: []
+  action:
+  - type: turn_on
+    device_id: ff93479e8bd580cbb7afa4e45a3efc6b
+    entity_id: light.living_room_lights
+    domain: light
+  - delay:
+      seconds: 2
+  - type: turn_off
+    device_id: ff93479e8bd580cbb7afa4e45a3efc6b
+    entity_id: light.living_room_lights
+    domain: light
+  - delay:
+      seconds: 2
+  - type: turn_on
+    device_id: ff93479e8bd580cbb7afa4e45a3efc6b
+    entity_id: light.living_room_lights
+    domain: light
+  - delay:
+      seconds: 2
+  - type: turn_off
+    device_id: ff93479e8bd580cbb7afa4e45a3efc6b
+    entity_id: light.living_room_lights
+    domain: light
+  mode: single

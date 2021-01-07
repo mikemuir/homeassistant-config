@@ -1,0 +1,6 @@
+LivingRoom:
+  name: Living Room Entertainment Control
+  entities:
+    - switch.watch_shield_tv
+    - switch.play_nintendo_switch
+    - switch.play_xbox_one
