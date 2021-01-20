@@ -251,23 +251,3 @@
       friendly_name: Outlet
       state: 'off'
   icon: mdi:power-sleep
-- id: '1609973580639'
-  name: Watch TV
-  entities:
-    remote.harmony_hub:
-      activity_starting:
-      current_activity: Shield TV
-      activity_list:
-      - Nintendo Switch
-      - Shield TV
-      - Play Xbox One
-      devices_list:
-      - Family Room
-      - Vizio TV
-      - Xbox One
-      - NVIDIA Game Console
-      last_activity: Shield TV
-      friendly_name: Harmony Hub
-      supported_features: 0
-      state: 'on'
-  icon: mdi:television

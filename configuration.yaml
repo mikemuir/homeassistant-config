@@ -22,6 +22,60 @@ remote:
   - platform: harmony
     name: harmony_hub
     host: 172.16.17.170
+media_player:
+  - platform: androidtv
+    name: shield_tv
+    host: 172.16.17.195
+sensor:
+  - platform: enphase_envoy
+    ip_address: 172.16.17.95
+    #username: !secret enphase_envoy_username
+    #password: !secret enphase_envoy_password
+    monitored_conditions:
+      - production
+      - daily_production
+      - lifetime_production
+      - consumption
+      - daily_consumption
+      - lifetime_consumption
+    # - inverters
+  - platform: template
+    sensors:
+      envoy_current_energy_production_kw:
+        friendly_name_template: 'Envoy Current Energy Production (kW)'
+        unit_of_measurement: 'kW'
+        icon_template: mdi:lightning-bolt
+        value_template: "{{ (states('sensor.envoy_current_energy_production')| float / 1000| round(2)) }}"
+      envoy_todays_energy_production_kw:
+        friendly_name_template: 'Envoy All Day Energy Production (kW)'
+        unit_of_measurement: 'kW'
+        icon_template: mdi:lightning-bolt-outline
+        value_template: "{{ (states('sensor.envoy_today_s_energy_production')| float / 1000| round(2)) }}"
+      envoy_lifetime_energy_production_kw:
+        friendly_name_template: 'Envoy Lifetime Energy Production (kW)'
+        unit_of_measurement: 'kW'
+        icon_template: mdi:lightning-bolt-outline
+        value_template: "{{ (states('sensor.envoy_lifetime_energy_production')| float / 1000| round(2)) }}"
+      envoy_current_energy_consumption_kw:
+        friendly_name_template: 'Envoy Current Energy Consumption (kW)'
+        unit_of_measurement: 'kW'
+        icon_template: mdi:battery-medium
+        value_template: "{{ (states('sensor.envoy_current_energy_consumption')| float / 1000| round(2)) }}"
+      envoy_todays_energy_consumption_kw:
+        friendly_name_template: 'Envoy All Day Energy Consumption (kW)'
+        unit_of_measurement: 'kW'
+        icon_template: mdi:battery-medium
+        value_template: "{{ (states('sensor.envoy_today_s_energy_consumption')| float / 1000| round(2)) }}"
+      envoy_lifetime_energy_consumption_kw:
+        friendly_name_template: 'Envoy Lifetime Energy Consumption (kW)'
+        unit_of_measurement: 'kW'
+        icon_template: mdi:battery-medium
+        value_template: "{{ (states('sensor.envoy_lifetime_energy_consumption')| float / 1000| round(2)) }}"
+      envoy_net_energy_value_kw:
+        friendly_name_template: 'Envoy Net Energy Value (kW)'
+        unit_of_measurement: 'kW'
+        icon_template: mdi:battery-heart-variant
+        value_template: "{{ (states('envoy_today_s_energy_production_kw')| float - states('envoy_today_s_energy_consumption_kw')| float / 1000)| round(2) }}"
 # Configure a default setup of Home Assistant (frontend, api, etc)
 default_config:
 
